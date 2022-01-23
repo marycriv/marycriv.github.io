@@ -4,37 +4,65 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
 <style> 
     body {
         margin: 0;
         padding:0;
-        background-color: #483D3F;
-        color: #F4EBD9;
+        background-color: #DBDBDB;
+        color: #4C4C4C;
+        font-family: 'Courier New', Courier, monospace;
     }
     h1 {
         font-family: 'Montserrat', sans-serif;
         font-weight: 900;
         font-size: 4rem;
+        text-align: center;
+        text-shadow: 4px 4px black;
     }
     .header {
-        font-family: 'Courier New', Courier, monospace;
-        background-color: #77685D;
+        background-color: #85C7F2;
+        color: #F3DE2C;
         padding: 1rem;
+        background-image: url('https://images.unsplash.com/photo-1516101922849-2bf0be616449?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3628&q=80');
+        background-size: 100%;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 10rem;
     }
     .header p {
         margin-top: 0;
+        
     }
     .about-me {
-        font-family: 'Helvetica';
+
     }
     .experience {
-        font-family: 'Helvetica';
+
     }
-    .projects {
-        font-family: 'Helvetica';
+    .education {
+
+    }
+    .footer {
+        text-align-last: center;
+        font-size: 2rem;
+        padding-top: 20px;
     }
     .contents {
-        padding: 1rem;
+        padding: 1.2rem;
+        margin-top: 12rem;
+    }
+    .role-title {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.5rem;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .footer hr {
+        width: 50%;
+        opacity: 80%;
     }
 
 </style>
@@ -42,11 +70,12 @@
 </head>
 <body>
     <div class="header">
-        <p>Hello, World. I'm...</p>
         <h1>Mary Crivelli</h1>
-        <p>Front End Software Engineer | NYC</p>
     </div>
     <div class="contents">
+        <div class="role-title">
+            <p>Front End Software Engineer | NYC</p>
+        </div>
         <div class="about-me">
             <h2>About Me</h2>
             Full stack web developer located in NYC with a passion for bringing stories to life through code. With experience in Ruby on Rails, JavaScript, and React, and a background in writing and research, I discovered web development through modding video games and creating personal websites. I bring strong skills in team-building and project management that help companies create a clear story for everything they do.
@@ -54,14 +83,14 @@
 
         <div class="experience">
             <h2>Experience</h2>
-            <p>Cloud Software Developer - IBM | 2019 - Present</p>
+            <p>Cloud Software Developer - <b>IBM</b> | 2019 - Present</p>
             <ul>
                 <li>Contributed to Cloud Pak for Applications Documentation on IBM Cloud GitHub - Updated Liberty demo for Red Hat OpenShift 4.3</li>
                 <li>Delivered client success by analyzing and reporting Transformation Advisor results as a part of Application Modernization engagement</li>
                 <li>Built sample applications utilizing React framework, implementing React Testing Library and React Carbon Components</li>
                 <li>Worked across multiple squads simultaneously, following agile methodology (daily scrum, tracking progress through Trello, code tracking through ZenHub)</li>
             </ul>
-            <p>Tutor - Elevate K-12 | 2018-2019</p>
+            <p>Tutor - <b>Elevate K-12</b> | 2018-2019</p>
             <ul>
                 <li>Tutored small online classrooms of high school students in Reading and English</li>
                 <li>Combined years of babysitting/childcare experience with classroom management techniques</li>
@@ -71,18 +100,25 @@
             </ul>
         </div>
 
-        <div class="projects">
+        <div class="education">
             <h2>Education</h2>
-            <p>University of Central Florida | B.A. in English</p>
+            <p>University of Central Florida | 2015-2018</p>
             <ul>
-                <li>2015-2018</li>
+                <li>B.A. in English</li>
                 <li>Honors in the Major (Thesis: Deconstruction of the romantic comedy in Crazy Ex-Girlfriend)</li>
             </ul>
-            <p>Flatiron School | Web Development Bootcamp</p>
+            <p>Flatiron School | 2018</p>
             <ul>
-                <li>2018</li>
+                <li>Web Development Bootcamp</li>
                 <li>Immersive web development program focusing on Ruby/Rails, vanilla JS, and React. </li>
             </ul>
+        </div>
+
+        <div class="footer">
+            <hr>
+            <a href="https://github.com/marycriv"><i class="fab fa-github-square"></i></a>
+            <a href="https://www.linkedin.com/in/mary-crivelli/"><i class="fab fa-linkedin" href="https://github.com/marycriv"></i></a>
+            <a href="https://medium.com/@marycriv"><i class="fab fa-medium" href="https://github.com/marycriv"></i></a>
         </div>
     </div>
 </body>
